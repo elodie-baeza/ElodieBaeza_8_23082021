@@ -1,0 +1,13 @@
+.footer-desktop {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 4rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-logo {
+    height: 2.5rem;
+    filter: brightness(0) invert(1)
+}
