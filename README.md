@@ -1,3 +1,7 @@
+# GitHub page
+
+Lien vers GitHub page [GitHub Page](https://elodie-baeza.github.io/ElodieBaeza_8_23082021/).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
