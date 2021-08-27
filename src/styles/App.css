@@ -1,8 +1,0 @@
-#root {
-  margin: auto;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
