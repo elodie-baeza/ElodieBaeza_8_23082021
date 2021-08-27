@@ -1,14 +1,13 @@
 import React from 'react'
 import 'styles/index.css'
-import banner from 'assets/banner.jpg/'
 
 class Banner extends React.Component {
 
     render() {
         return (
             <figure className='banner'>
-                <img src={banner} alt="banner" />
-                <figcaption>Chez vous, partout et ailleurs</figcaption>
+                <img src={this.props.picture} alt="banner" />
+                <figcaption>{this.props.text}</figcaption>
             </figure>
         )
     }
