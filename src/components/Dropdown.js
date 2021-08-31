@@ -1,9 +1,6 @@
 import React from 'react'
 import 'styles/index.css'
 import { ReactComponent as ArrowBack } from 'assets/arrow_back.svg'
-import logements from 'datas/logements.json'
-
-const equipements = logements[1].equipments
 
 class Dropdown extends React.Component {
 
@@ -21,7 +18,7 @@ class Dropdown extends React.Component {
 
     render() {
         return (
-            <div className='dropdown-container'>
+            <div className={'dropdown-container ' + this.props.size}>
                 <div className='dropdown-title'>
                     <p>{this.props.title}</p>
                     <ArrowBack 
@@ -30,7 +27,7 @@ class Dropdown extends React.Component {
                     />
                 </div>
                 <ul className= {`dropdown-body ${this.state.active ? 'show' : null}`}>
-                    {equipements.map((equipement, index) => 
+                    {this.props.list.map((equipement, index) => 
                         <li key={index + 1}>{equipement}</li>
                     )}
                 </ul>
