@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import 'styles/index.css'
 
 class Erreur extends React.Component {
@@ -8,7 +9,7 @@ class Erreur extends React.Component {
             <div className='erreur404'>
                 <h2>404</h2>
                 <p>Oups! La page que vous demandez n'existe pas.</p>
-                <a href="#top">Retourner sur la page d’accueil</a>
+                <Link to='/accueil'>Retourner sur la page d’accueil</Link>
             </div>
         )
     }

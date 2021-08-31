@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Thumb extends React.Component {
     render() {
         return(
-            <a href='#top'>
+            <Link to='/card'>
                 <figure className='thumb'>
                     <img src={this.props.picture} alt='' />
                     <figcaption>{this.props.title}</figcaption>
                 </figure>
-            </a>
+            </Link>
         )
     }
 }
