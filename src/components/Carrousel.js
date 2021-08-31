@@ -11,7 +11,7 @@ class Carrousel extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            setSlideIndex: props.slideIndex
+            setSlideIndex: 1
         }
         this.prevSlide = this.nextSlide.bind(this)
         this.nextSlide = this.nextSlide.bind(this)
@@ -44,7 +44,7 @@ class Carrousel extends React.Component {
         return (
             <div className='slider-container'>
                 <div className='slider'>
-                    {pictures.map((src, index) => 
+                    {this.props.pictures.map((src, index) => 
                         <img 
                         key={index + 1} 
                         src={src} alt=""
