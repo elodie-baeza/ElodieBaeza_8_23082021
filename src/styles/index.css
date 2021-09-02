@@ -104,14 +104,13 @@ main {
     font-size: 48px;
   }
 }
-.footer-desktop {
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
 @media only screen and (max-width: 767.98px) {
-  .footer-desktop p {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer p {
     margin: 0;
     font-size: 3vw;
     padding-top: 2rem;
@@ -127,7 +126,17 @@ main {
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer-desktop p {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer.apropos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
     margin: 0;
     font-size: 1.5rem;
     padding-top: 2rem;
@@ -149,6 +158,7 @@ main {
   border-radius: 0.6rem;
   padding: 0.25rem 1.5rem;
   font-size: 0.9rem;
+  margin-right: 1rem;
 }
 
 .thumb {
@@ -228,9 +238,13 @@ main {
 }
 .dropdown-container {
   width: 45%;
+  margin-bottom: 2rem;
 }
 .dropdown-container.large {
   width: 80%;
+}
+.dropdown-container ul li {
+  list-style-type: none;
 }
 .dropdown-container .dropdown-title {
   display: flex;
@@ -271,6 +285,17 @@ main {
   position: relative;
 }
 
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+}
+.rate-container svg[class*=icon] {
+  margin-left: 0.66rem;
+}
+.rate-container .icon-empty path {
+  fill: #e3e3e3;
+}
+
 .list {
   display: grid;
   justify-content: center;
@@ -284,10 +309,54 @@ main {
   gap: 60px;
 }
 
+.host-picture {
+  border-radius: 50%;
+}
+
+.presentation-container {
+  color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.presentation-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.presentation-container .title-container .title {
+  font-size: 2.25rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.presentation-container .title-container .location {
+  margin-bottom: 1rem;
+}
+.presentation-container .host-container {
+  text-align: end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.presentation-container .host-container img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.dropdowns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .APropos-body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.APropos-body > :first-child {
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -309,31 +378,30 @@ main {
     margin: 1rem 2rem 8rem 2rem;
     text-align: center;
   }
-  .erreur404 a {
+  .erreur404 Link {
     font-size: 0.85rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .erreur404 {
     display: flex;
-    height: 84vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: #FF6060;
+    height: 37rem;
   }
   .erreur404 h2 {
     margin: 0;
     font-weight: 700;
     font-size: 21vw;
+    text-align: center;
   }
   .erreur404 p {
     font-size: 2vw;
-    margin-top: 4rem;
-    margin-bottom: 11rem;
     text-align: center;
   }
-  .erreur404 a {
+  .erreur404 Link {
     font-size: 1.15rem;
   }
 }
