@@ -8,26 +8,28 @@ import logements from 'datas/logements.json'
 
 const getAPI = logements
 
-function Accueil() {
-  return (
-    <React.Fragment>
-        <main>
-            <Banner picture={bannerHome} text='Chez vous, partout et ailleurs'/>
-            <div className='list'>
-              {getAPI.map( item =>
-                <Thumb 
-                  key={item.id} 
-                  id={item.id} 
-                  cover={item.cover} 
-                  title={item.title} 
-                  index={item.id}
-                />
-              )}
-            </div>
-        </main>
-        <Footer />
-    </React.Fragment>
-  )
+class Accueil extends React.Component {
+  render () {
+      return (
+        <React.Fragment>
+            <main>
+                <Banner picture={bannerHome} text='Chez vous, partout et ailleurs'/>
+                <div className='list'>
+                  {getAPI.map( item =>
+                    <Thumb 
+                      key={item.id} 
+                      id={item.id} 
+                      cover={item.cover} 
+                      title={item.title} 
+                      index={item.id}
+                    />
+                  )}
+                </div>
+            </main>
+            <Footer />
+        </React.Fragment>
+      )
+  }
 }
 
 export default Accueil;
