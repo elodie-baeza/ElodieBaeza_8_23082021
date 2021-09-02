@@ -6,7 +6,7 @@ import { ReactComponent as Logo } from 'assets/logo.svg'
 class Footer extends React.Component{
     render(){
         return (
-            <footer className='footer-desktop'>
+            <footer className='footer'>
                 <Logo className='footer-logo'/>
                 <p>© 2020 Kasa. All rights reserved</p>
             </footer>
