@@ -15,7 +15,13 @@ function Accueil() {
             <Banner picture={bannerHome} text='Chez vous, partout et ailleurs'/>
             <div className='list'>
               {getAPI.map( item =>
-                <Thumb key={item.id} id={item.id} cover={item.cover} title={item.title} />
+                <Thumb 
+                  key={item.id} 
+                  id={item.id} 
+                  cover={item.cover} 
+                  title={item.title} 
+                  index={item.id}
+                />
               )}
             </div>
         </main>

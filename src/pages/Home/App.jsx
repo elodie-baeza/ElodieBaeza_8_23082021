@@ -21,9 +21,12 @@ function App() {
             <APropos />
           </Route>
 
-          {/* <Route exact path={`/${this.props.id}`} >
-            <Logement />
-          </Route> */}
+          <Route
+            path={'/fiche/:id'}
+            component={({match}) =>
+              <Logement match={match}/>
+            }>
+          </Route>
 
           <Route path='/'>
             <Erreur />

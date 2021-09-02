@@ -4,35 +4,49 @@ import Footer from '../components/Footer';
 import Tag from '../components/Tag';
 import Carrousel from '../components/Carrousel';
 import Dropdown from '../components/Dropdown';
-import logements from 'datas/logements.json'
+import logementsDatas from 'datas/logements.json'
 
-const logement = logements[1];
 
 class Logement extends React.Component {
 
-  
+  constructor(props) {
+    super(props)
+    this.state = {
+      logement: null
+    }
+  }
 
+  componentDidMount() {
+    let slug = this.props.match.params.id
+    this.setState({ 
+      logement: logementsDatas.find(x => x.id === slug 
+    )})
+  }
+  
   descriptionInArray() {
-    const descriptionInArray = []
-    descriptionInArray.push(logement.description)
+    if (this.state.logement != null) {
+      var descriptionInArray = new Array([this.state.logement.description])
+    }
     return descriptionInArray
   }
 
   render() {
     return (
-      <React.Fragment>
-        <main>
-          <Carrousel pictures={logement.pictures} />
-          {logement.tags.map( item =>
-            <Tag name={item} /> 
-          )}
-          <div>
-            <Dropdown title='Equipements' list={logement.equipments}/>
-            <Dropdown title='Description' list={this.descriptionInArray()}/>
-          </div>
-        </main>
-        <Footer />
-      </React.Fragment>
+      this.state.logement && (
+        <React.Fragment>
+          <main>
+            <Carrousel pictures={this.state.logement.pictures} />
+            {this.state.logement.tags.map( (item, index) =>
+              <Tag key={index} name={item} /> 
+            )}
+            <div>
+              <Dropdown title='Equipements' list={this.state.logement.equipments}/>
+              <Dropdown title='Description' list={this.descriptionInArray()}/>
+            </div>
+          </main>
+          <Footer />
+        </React.Fragment>
+      )
     )
   }
 }

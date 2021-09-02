@@ -20,10 +20,6 @@ main {
   margin: 0rem 6rem;
 }
 
-ul li {
-  list-style-type: none;
-}
-
 .header-nav {
   font-family: "Montserrat";
   font-weight: 500;
@@ -156,30 +152,30 @@ ul li {
 }
 
 .thumb {
-  padding: 2rem 0;
-}
-.thumb figure {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
   width: 21rem;
   height: 21rem;
 }
-.thumb figure img {
+.thumb figure {
+  position: relative;
+}
+.thumb img {
   object-fit: cover;
   background-color: #FF6060;
   border-radius: 0.6rem;
   width: 21rem;
   height: 21rem;
-  filter: brightness(70%);
 }
-.thumb figure figcaption {
+.thumb figcaption {
   position: absolute;
-  width: 12rem;
+  bottom: 0;
+  left: 0;
+  width: 13rem;
   color: white;
+  background: rgba(0, 0, 0, 0.4);
   font-size: 18px;
   padding: 20px;
+  border-radius: 0.6rem;
 }
 
 .slider-container {
@@ -276,13 +272,16 @@ ul li {
 }
 
 .list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  justify-content: center;
   background-color: #F6F6F6;
-  padding: 0 2rem;
+  padding: 2rem;
   border-radius: 2.5rem;
-  margin: 3rem 0;
+  margin: 3rem auto;
+  grid-template-columns: repeat(auto-fill, 340px);
+  grid-template-rows: repeat(auto-fill, 340px);
+  grid-gap: 60px;
+  gap: 60px;
 }
 
 .APropos-body {
