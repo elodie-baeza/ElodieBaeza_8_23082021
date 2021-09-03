@@ -12,11 +12,11 @@ class Rate extends React.Component {
     render() {
         return(
             <div className='rate-container'>
-                {this.range.map((rangeElem) =>
+                {this.range.map((rangeElem, index) =>
                     this.props.value >= rangeElem ? (
-                        <StarIcon className='icon-fill'/>
+                        <StarIcon key={index} className='icon-fill'/>
                     ) : 
-                        <StarIcon className='icon-empty'/>
+                        <StarIcon key={index} className='icon-empty'/>
                     )}
 		    </div>
         )
