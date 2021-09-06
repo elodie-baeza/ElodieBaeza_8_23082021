@@ -9,27 +9,23 @@ class Carrousel extends React.Component {
         this.state = {
             slidePosition: 1
         }
-        this.prevSlide = this.nextSlide.bind(this)
+        this.prevSlide = this.prevSlide.bind(this)
         this.nextSlide = this.nextSlide.bind(this)
     }
 
     nextSlide() {
-        if(this.state.slidePosition !== this.props.pictures.length) {
-            this.setState(state => {
-                return {slidePosition: state.slidePosition + 1}
-            });
-        } 
-        else
-        {
-            this.setState({slidePosition: 1})
-        }
+        this.setState({
+            'slidePosition': this.state.slidePosition === this.props.pictures.length
+            ? 1
+            : this.state.slidePosition +1
+        })
     }
 
     prevSlide() {
         this.setState({
             'slidePosition': this.state.slidePosition === 1
                 ? this.props.pictures.length 
-                : this.state.slidePosition - 1
+                : this.state.slidePosition -1
         })
     }
 
