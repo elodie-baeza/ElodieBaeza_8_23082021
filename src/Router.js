@@ -19,7 +19,7 @@ class Router extends React.Component {
                 </Route>
       
                 <Route
-                  path={'/fiche/:id'}
+                  exact path={'/fiche/:id'}
                   component={({match}) =>
                     <Logement match={match}/>
                   }>

@@ -5,6 +5,7 @@ import Carrousel from '../../components/Carrousel/Carrousel';
 import Dropdown from '../../components/Dropdown/Dropdown';
 import logementsDatas from 'data/logements.json'
 import Rate from 'components/Rate/Rate';
+import { Redirect } from 'react-router';
 
 class Logement extends React.Component {
 
@@ -18,8 +19,8 @@ class Logement extends React.Component {
   componentDidMount() {
     let slug = this.props.match.params.id
     this.setState({ 
-      logement: logementsDatas.find(x => x.id === slug 
-    )})
+      logement: logementsDatas.find(x => x.id === slug)
+    })
   }
   
   descriptionInArray() {
@@ -31,7 +32,7 @@ class Logement extends React.Component {
 
   render() {
     return (
-      this.state.logement && (
+      this.state.logement ? (
         <main>
           <Carrousel pictures={this.state.logement.pictures} />
           <div className='presentation-container'>
@@ -61,6 +62,8 @@ class Logement extends React.Component {
           </div>
         </main>
       )
+      : this.state.logement === undefined && 
+        <Redirect to='/error' />
     )
   }
 }
