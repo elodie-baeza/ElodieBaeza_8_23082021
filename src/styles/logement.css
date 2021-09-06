@@ -17,7 +17,7 @@ body {
 }
 
 main {
-  margin: 0rem 6rem;
+  margin: 0rem 1.25rem;
 }
 
 .header-nav {
@@ -32,7 +32,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1.25rem;
+    margin: 1.25rem 1.25rem;
   }
   .header-desktop a {
     font-size: 0.9rem;
@@ -49,7 +49,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2.5rem 6rem;
+    margin: 2.5rem 1.25rem;
   }
   .header-desktop a {
     font-size: 1.75rem;
@@ -61,96 +61,6 @@ main {
     height: 4.3rem;
   }
 }
-@media only screen and (max-width: 767.98px) {
-  .banner {
-    display: flex;
-    align-items: center;
-  }
-  .banner img {
-    object-fit: cover;
-    size: 0.5vw;
-    width: 100%;
-    height: 7rem;
-    border-radius: 1rem;
-    filter: brightness(70%);
-  }
-  .banner figcaption {
-    position: absolute;
-    width: 62%;
-    color: white;
-    font-size: 24px;
-    padding-left: 1rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .banner {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .banner img {
-    object-fit: cover;
-    size: 0.5vw;
-    width: 100%;
-    height: 14rem;
-    border-radius: 1rem;
-    filter: brightness(70%);
-  }
-  .banner figcaption {
-    position: absolute;
-    color: white;
-    font-size: 48px;
-  }
-}
-@media only screen and (max-width: 767.98px) {
-  .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  .footer p {
-    margin: 0;
-    font-size: 3vw;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-  }
-
-  .footer-logo {
-    height: 2.5rem;
-    margin-top: 4rem;
-  }
-  .footer-logo path {
-    fill: white;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-  }
-  .footer.apropos {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer p {
-    margin: 0;
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .footer-logo {
-    height: 2.5rem;
-    margin-top: 4rem;
-  }
-  .footer-logo path {
-    fill: white;
-  }
-}
 .tag {
   display: inline;
   background-color: #FF6060;
@@ -159,33 +69,6 @@ main {
   padding: 0.25rem 1.5rem;
   font-size: 0.9rem;
   margin-right: 1rem;
-}
-
-.thumb {
-  display: flex;
-  width: 21rem;
-  height: 21rem;
-}
-.thumb figure {
-  position: relative;
-}
-.thumb img {
-  object-fit: cover;
-  background-color: #FF6060;
-  border-radius: 0.6rem;
-  width: 21rem;
-  height: 21rem;
-}
-.thumb figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 13rem;
-  color: white;
-  background: rgba(0, 0, 0, 0.4);
-  font-size: 18px;
-  padding: 20px;
-  border-radius: 0.6rem;
 }
 
 .slider-container {
@@ -260,14 +143,14 @@ main {
 .dropdown-container .dropdown-title .dropdown-icon {
   height: 2rem;
   width: 2rem;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   transition: 0.5s;
 }
 .dropdown-container .dropdown-title .dropdown-icon path {
   transform: translate(0, 11px);
 }
 .dropdown-container .dropdown-title .dropdown-icon.show {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   transition: 0.5s;
 }
 .dropdown-container .dropdown-body {
@@ -296,19 +179,53 @@ main {
   fill: #e3e3e3;
 }
 
-.list {
-  display: grid;
-  justify-content: center;
-  background-color: #F6F6F6;
-  padding: 2rem;
-  border-radius: 2.5rem;
-  margin: 3rem auto;
-  grid-template-columns: repeat(auto-fill, 340px);
-  grid-template-rows: repeat(auto-fill, 340px);
-  grid-gap: 60px;
-  gap: 60px;
-}
+@media only screen and (max-width: 767.98px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
 
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+  .footer-logo path {
+    fill: white;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer.apropos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+  .footer-logo path {
+    fill: white;
+  }
+}
 .host-picture {
   border-radius: 50%;
 }
@@ -350,60 +267,4 @@ main {
   justify-content: space-between;
 }
 
-.APropos-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.APropos-body > :first-child {
-  margin-top: 2rem;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .erreur404 {
-    display: flex;
-    height: 84vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #FF6060;
-  }
-  .erreur404 h2 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 21vw;
-  }
-  .erreur404 p {
-    font-size: 5vw;
-    margin: 1rem 2rem 8rem 2rem;
-    text-align: center;
-  }
-  .erreur404 Link {
-    font-size: 0.85rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .erreur404 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    color: #FF6060;
-    height: 37rem;
-  }
-  .erreur404 h2 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 21vw;
-    text-align: center;
-  }
-  .erreur404 p {
-    font-size: 2vw;
-    text-align: center;
-  }
-  .erreur404 Link {
-    font-size: 1.15rem;
-  }
-}
-
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=logement.css.map */

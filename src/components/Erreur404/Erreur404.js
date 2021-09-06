@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import 'styles/index.css'
+import 'styles/erreur404.css'
 
-class Erreur extends React.Component {
+class Erreur404 extends React.Component {
 
     render() {
         return (
@@ -15,7 +15,7 @@ class Erreur extends React.Component {
             </div>
         )
     }
-
+    
 }
 
-export default Erreur
+export default Erreur404

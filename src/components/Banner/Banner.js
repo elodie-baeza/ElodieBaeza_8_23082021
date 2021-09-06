@@ -1,5 +1,4 @@
 import React from 'react'
-import 'styles/index.css'
 
 class Banner extends React.Component {
 

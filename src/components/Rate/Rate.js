@@ -1,4 +1,3 @@
-import 'styles/index.css';
 import React from 'react';
 import { ReactComponent as StarIcon } from 'assets/star.svg'
 

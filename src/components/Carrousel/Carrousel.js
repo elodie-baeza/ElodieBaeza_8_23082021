@@ -1,43 +1,36 @@
 import React from 'react'
-import 'styles/index.css'
 import arrowBack from 'assets/arrow_back.svg'
 import arrowForward from 'assets/arrow_forward.svg'
-import logements from 'datas/logements.json'
-
-const pictures = logements[1].pictures
 
 class Carrousel extends React.Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            setSlideIndex: 1
+            slidePosition: 1
         }
         this.prevSlide = this.nextSlide.bind(this)
         this.nextSlide = this.nextSlide.bind(this)
     }
 
     nextSlide() {
-        if(this.state.setSlideIndex !== pictures.length) {
+        if(this.state.slidePosition !== this.props.pictures.length) {
             this.setState(state => {
-                return {setSlideIndex: state.setSlideIndex + 1}
+                return {slidePosition: state.slidePosition + 1}
             });
         } 
-        else if (this.state.setSlideIndex === pictures.length)
+        else
         {
-            this.setState({setSlideIndex: 1})
+            this.setState({slidePosition: 1})
         }
     }
 
     prevSlide() {
-        if(this.state.setSlideIndex !== 1) {
-            this.setState(state => {
-                return {setSlideIndex: state.setSlideIndex - 1}
-            });
-        }
-        if(this.state.setSlideIndex === 1) {
-            this.setState({setSlideIndex: pictures.length})
-        }
+        this.setState({
+            'slidePosition': this.state.slidePosition === 1
+                ? this.props.pictures.length 
+                : this.state.slidePosition - 1
+        })
     }
 
     render() {
@@ -45,13 +38,14 @@ class Carrousel extends React.Component {
             <div className='slider-container'>
                 <div className='slider'>
                     {this.props.pictures.map((src, index) => 
+                        this.state.slidePosition === ++index && 
                         <img 
-                        key={index + 1} 
+                        key={index} 
                         src={src} alt=""
-                        className={this.state.setSlideIndex === index + 1 ? "active" : "slide" }
+                        className={"active"}
                         />
                     )}
-                    <p>{this.state.setSlideIndex}/{pictures.length}</p>
+                    <p>{this.state.slidePosition}/{this.props.pictures.length}</p>
                 </div>
                 <div className='slider-buttons'>
                     <button type='button' onClick={this.prevSlide}>

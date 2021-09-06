@@ -1,0 +1,212 @@
+#root {
+  font-family: "Montserrat";
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px;
+  margin: auto;
+}
+
+main {
+  margin: 0rem 1.25rem;
+}
+
+.header-nav {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 1.25rem;
+  }
+  .header-desktop a {
+    font-size: 0.9rem;
+    padding-left: 0.6rem;
+    color: #FF6060;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 1.25rem;
+  }
+  .header-desktop a {
+    font-size: 1.75rem;
+    padding-left: 3.5rem;
+    color: #FF6060;
+  }
+
+  .logo {
+    height: 4.3rem;
+  }
+}
+@media only screen and (max-width: 767.98px) {
+  .banner {
+    display: flex;
+    align-items: center;
+  }
+  .banner img {
+    object-fit: cover;
+    size: 0.5vw;
+    width: 100%;
+    height: 7rem;
+    border-radius: 1rem;
+    filter: brightness(70%);
+  }
+  .banner figcaption {
+    position: absolute;
+    width: 62%;
+    color: white;
+    font-size: 24px;
+    padding-left: 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .banner {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner img {
+    object-fit: cover;
+    size: 0.5vw;
+    width: 100%;
+    height: 14rem;
+    border-radius: 1rem;
+    filter: brightness(70%);
+  }
+  .banner figcaption {
+    position: absolute;
+    color: white;
+    font-size: 48px;
+  }
+}
+.dropdown-container {
+  width: 45%;
+  margin-bottom: 2rem;
+}
+.dropdown-container.large {
+  width: 80%;
+}
+.dropdown-container ul li {
+  list-style-type: none;
+}
+.dropdown-container .dropdown-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: #FF6060;
+  font-size: 18px;
+  z-index: 10;
+  padding: 0.8rem 1.2rem;
+}
+.dropdown-container .dropdown-title .dropdown-icon {
+  height: 2rem;
+  width: 2rem;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+.dropdown-container .dropdown-title .dropdown-icon path {
+  transform: translate(0, 11px);
+}
+.dropdown-container .dropdown-title .dropdown-icon.show {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.dropdown-container .dropdown-body {
+  background-color: #F6F6F6;
+  padding: 2.5rem 0.75rem 1.75rem 1.25rem;
+  margin-top: -0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: none;
+  color: #FF6060;
+}
+.dropdown-container .dropdown-body.show {
+  display: block;
+  z-index: -1;
+  position: relative;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+  .footer-logo path {
+    fill: white;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .footer.apropos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+  .footer-logo path {
+    fill: white;
+  }
+}
+.APropos-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.APropos-body > :first-child {
+  margin-top: 2rem;
+}
+
+/*# sourceMappingURL=apropos.css.map */
