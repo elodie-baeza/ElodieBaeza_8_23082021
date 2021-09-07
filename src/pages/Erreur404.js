@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import 'styles/erreur404.css'
 
 class Erreur404 extends React.Component {
 
     render() {
-        return (
+        return (    
             <section className='erreur404'>
                 <div>
                     <h2>404</h2>

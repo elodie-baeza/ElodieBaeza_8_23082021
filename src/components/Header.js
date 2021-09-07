@@ -1,4 +1,5 @@
 import logo from 'assets/logo.png'
+import Banner from 'components/Banner';
 import React from 'react'
 import { Link } from 'react-router-dom';
 
@@ -8,10 +9,13 @@ class Header extends React.Component{
         return (
             <header className='header-desktop'>
                 <img src={logo} alt="Kasa" className='logo'/>
-                <div className='header-nav'>
+                <nav className='header-nav'>
                     <Link to='/'>Accueil</Link>
                     <Link to='/apropos'>A Propos</Link>
-                </div>
+                </nav>
+                {this.props.banner
+                ? <Banner picture={this.props.picture} slogan={this.props.slogan}/>
+                : null }
             </header>
         );
     }

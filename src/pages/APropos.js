@@ -1,9 +1,8 @@
-import 'styles/apropos.css';
 import React from 'react';
-import Banner from 'components/Banner/Banner';
 import bannerAPropos from 'assets/banner-a-propos.jpg';
-import Dropdown from 'components/Dropdown/Dropdown';
+import Dropdown from 'components/Dropdown';
 import apropos from 'data/apropos.json'
+import Banner from 'components/Banner';
 
 class APropos extends React.Component {
 

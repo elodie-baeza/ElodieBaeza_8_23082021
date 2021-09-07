@@ -6,7 +6,7 @@ class Banner extends React.Component {
         return (
             <figure className='banner'>
                 <img src={this.props.picture} alt="banner" />
-                <figcaption>{this.props.text}</figcaption>
+                <figcaption>{this.props.slogan}</figcaption>
             </figure>
         )
     }
