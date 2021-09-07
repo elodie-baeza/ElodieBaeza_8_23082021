@@ -1,5 +1,6 @@
+import 'components/header/Header.scss'
 import logo from 'assets/logo.png'
-import Banner from 'components/Banner';
+import Banner from 'components/banner/Banner';
 import React from 'react'
 import { Link } from 'react-router-dom';
 

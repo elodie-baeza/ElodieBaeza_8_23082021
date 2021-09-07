@@ -1,8 +1,9 @@
+import 'pages/logement/Logement.scss';
 import React from 'react';
-import Tag from 'components/Tag';
-import Carrousel from 'components/Carrousel';
-import Dropdown from 'components/Dropdown';
-import Rate from 'components/Rate';
+import Tag from 'components/tag/Tag';
+import Carrousel from 'components/carrousel/Carrousel';
+import Dropdown from 'components/dropdown/Dropdown';
+import Rate from 'components/rate/Rate';
 import logementsDatas from 'data/logements.json'
 import { Redirect } from 'react-router';
 

@@ -1,3 +1,4 @@
+import 'components/carrousel/Carrousel.scss'
 import React from 'react'
 import arrowBack from 'assets/arrow_back.svg'
 import arrowForward from 'assets/arrow_forward.svg'

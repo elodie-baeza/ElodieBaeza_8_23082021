@@ -1,0 +1,51 @@
+.slider-container {
+    // background-color: $colour-primary;
+    position: relative;
+    .slider {
+        img {
+            max-width: 100%;
+            display: none;
+            object-fit: cover;
+            border-radius: 2rem;
+            &.active {
+                width: 100%;
+                height: 26rem;
+                display: block;
+                animation: fade 0.8s;
+            }    
+        }
+    }
+    p {
+        position:absolute;
+        bottom: 10%;
+        text-align: center;
+        width: 100%;
+        color: white;
+        font-size: 1.1rem;
+    }
+    .slider-buttons {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        bottom: 0%;
+        align-items: center;
+        justify-content: space-between;
+        button {
+            background-color: transparent;
+            border-style: none;
+            img {
+                height: 2%;
+            }
+        }
+    }    
+}
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}

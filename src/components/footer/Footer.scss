@@ -1,0 +1,54 @@
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        p {
+            margin: 0;
+            font-size: 3vw;
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+        }
+    }
+    
+    .footer-logo {
+        height: 2.5rem;
+        margin-top: 4rem;
+        path {
+            fill: white;
+        }
+    }    
+
+}
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 768px){
+
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        &.apropos {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        p {
+            margin: 0;
+            font-size: 1.5rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+    }
+    
+    .footer-logo {
+        height: 2.5rem;
+        margin-top: 4rem;
+        path {
+            fill: white;
+        }
+    }    
+
+}

@@ -1,0 +1,67 @@
+@import '../../variables';
+
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+
+    .thumb {
+        display: flex;
+        width: 21rem;
+        margin-top: 3rem;
+        figure {
+            position: relative;
+        }
+        img {
+            object-fit: cover;
+            background-color: $colour-primary;
+            border-radius: 0.6rem;
+            width: 21rem;
+            height: 16rem;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 13rem;
+            color: rgba(255,255,255,1);
+            background: rgba(0,0,0,0.4);
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 0.6rem;
+        }
+    }
+
+}
+
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 768px){
+
+    .thumb {
+        display: flex;
+        width: 21rem;
+        height: 21rem;
+        margin-top: 3rem;
+        figure {
+            position: relative;
+        }
+        img {
+            object-fit: cover;
+            background-color: $colour-primary;
+            filter: brightness(80%);
+            border-radius: 0.6rem;
+            width: 21rem;
+            height: 21rem;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: rgba(255,255,255,1);
+            // background: rgba(0,0,0,0.4);
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 0.6rem;
+        }
+    }
+
+}

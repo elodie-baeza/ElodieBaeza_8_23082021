@@ -1,3 +1,4 @@
+import 'pages/erreur404/Erreur404.scss';
 import React from 'react'
 import { Link } from 'react-router-dom'
 

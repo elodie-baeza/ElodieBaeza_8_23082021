@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Accueil from 'pages/Accueil';
-import APropos from 'pages/APropos';
-import Logement from 'pages/Logement';
-import Erreur404 from 'pages/Erreur404';
+import Accueil from 'pages/accueil/Accueil';
+import APropos from 'pages/apropos/APropos';
+import Logement from 'pages/logement/Logement';
+import Erreur404 from 'pages/erreur404/Erreur404';
 
 class Router extends React.Component {
 

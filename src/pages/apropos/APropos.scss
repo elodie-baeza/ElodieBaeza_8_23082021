@@ -1,0 +1,8 @@
+.APropos-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >:first-child {
+        margin-top: 2rem;
+    }
+}

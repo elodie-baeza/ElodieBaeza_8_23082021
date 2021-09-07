@@ -1,3 +1,4 @@
+import 'components/dropdown/Dropdown.scss'
 import React from 'react'
 import { ReactComponent as ArrowBack } from 'assets/arrow_back.svg'
 

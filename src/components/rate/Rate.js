@@ -1,3 +1,4 @@
+import 'components/rate/Rate.scss'
 import React from 'react';
 import { ReactComponent as StarIcon } from 'assets/star.svg'
 

@@ -1,0 +1,12 @@
+.rate-container{
+    display: flex;
+    justify-content: space-between;
+    svg[class*='icon'] {
+        margin-left: 0.66rem;
+    }
+    .icon-empty {
+        path {
+            fill: #e3e3e3;
+        }
+    }
+}

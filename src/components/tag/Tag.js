@@ -1,3 +1,4 @@
+import 'components/tag/Tag.scss'
 import React from 'react';
 
 class Tag extends React.Component {

@@ -1,8 +1,9 @@
+import 'pages/accueil/Accueil.scss';
 import React from 'react';
 import bannerHome from 'assets/banner-home.jpg';
-import Thumb from 'components/Thumb';
+import Thumb from 'components/thumb/Thumb';
 import logements from 'data/logements.json'
-import Banner from 'components/Banner';
+import Banner from 'components/banner/Banner';
 
 const getAPI = logements
 
