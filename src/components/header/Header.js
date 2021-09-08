@@ -1,4 +1,4 @@
-import 'components/header/Header.scss'
+import 'components/header/Header.css'
 import logo from 'assets/logo.png'
 import Banner from 'components/banner/Banner';
 import React from 'react'

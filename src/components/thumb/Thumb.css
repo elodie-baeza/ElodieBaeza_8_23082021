@@ -1,0 +1,65 @@
+@media only screen and (max-width: 767.98px) {
+  .thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 21rem;
+    margin-top: 3rem;
+  }
+  .thumb figure {
+    position: relative;
+  }
+  .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-color: #FF6060;
+    border-radius: 0.6rem;
+    width: 21rem;
+    height: 16rem;
+  }
+  .thumb figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 21rem;
+    height: 21rem;
+    margin-top: 3rem;
+  }
+  .thumb figure {
+    position: relative;
+  }
+  .thumb img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-color: #FF6060;
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+    border-radius: 0.6rem;
+    width: 21rem;
+    height: 21rem;
+  }
+  .thumb figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 0.6rem;
+  }
+}
+/*# sourceMappingURL=Thumb.css.map */

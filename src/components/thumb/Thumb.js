@@ -1,4 +1,4 @@
-import 'components/thumb/Thumb.scss'
+import 'components/thumb/Thumb.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 

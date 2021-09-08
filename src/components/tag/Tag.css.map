@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,MAAM;EACf,gBAAgB,ECJH,OAAO;EDKpB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,cAAc;EACvB,SAAS,EAAE,MAAM;EACjB,YAAY,EAAE,IAAI;CACrB",
+    "sources": [
+        "Tag.scss",
+        "../../_variables.scss"
+    ],
+    "names": [],
+    "file": "Tag.css"
+}
