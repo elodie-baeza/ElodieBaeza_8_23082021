@@ -3,7 +3,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 84vh;
+    height: 86vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -47,7 +47,7 @@
         -ms-flex-align: center;
             align-items: center;
     color: #FF6060;
-    height: 59rem;
+    height: 48rem;
   }
   .erreur404 h2 {
     margin: 0;
