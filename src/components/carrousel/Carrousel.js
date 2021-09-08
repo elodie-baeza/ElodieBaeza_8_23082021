@@ -44,7 +44,8 @@ class Carrousel extends React.Component {
                     )}
                     <p>{this.state.slidePosition}/{this.props.pictures.length}</p>
                 </div>
-                <div className='slider-buttons'>
+                {this.props.pictures.length !== 1
+                ? <div className='slider-buttons'>
                     <button type='button' onClick={this.prevSlide}>
                         <img src={arrowBack} alt=''/>
                     </button>
@@ -52,6 +53,8 @@ class Carrousel extends React.Component {
                         <img src={arrowForward} alt=''/>
                     </button>
                 </div>
+                : null
+                }
             </div>
         )
     }
