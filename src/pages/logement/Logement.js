@@ -35,31 +35,31 @@ class Logement extends React.Component {
       this.state.logement ? (
           <main>
             <Carrousel pictures={this.state.logement.pictures} />
-            <div className='presentation-container'>
+            <section className='infos'>
               <div>
-                <div className='title-container'>
-                  <div className='title'>{this.state.logement.title}</div>
-                  <div className='location'>{this.state.logement.location}</div>
-                </div>
-                <div>
+                <p className='title'>{this.state.logement.title}</p>
+                <p className='location'>{this.state.logement.location}</p>
+                <div className='tags'>
                   {this.state.logement.tags.map( (item, index) =>
                     <Tag key={index} name={item} /> 
                     )}
                 </div>
               </div>
-              <div>
-                <div className='host-container'>
-                  {this.state.logement.host.name.split(' ')[0]}<br/>
-                  {this.state.logement.host.name.split(' ')[1]}
-                  <img src={this.state.logement.host.picture} alt="host" className='host-picture'/>
-                </div>
+              <div className='host'>
+                <figure>
+                    <img src={this.state.logement.host.picture} alt="host" className='host-picture'/>
+                    <figcaption>
+                      {this.state.logement.host.name.split(' ')[0]}<br/>
+                      {this.state.logement.host.name.split(' ')[1]}
+                    </figcaption>
+                </figure>
                 <Rate value={this.state.logement.rating}/>
               </div>
-            </div>
-            <div className='dropdowns'>
+            </section>
+            <section className='dropdowns'>
               <Dropdown title='Equipements' list={this.state.logement.equipments}/>
               <Dropdown title='Description' list={this.descriptionInArray()}/>
-            </div>
+            </section>
           </main>
       )
       : this.state.logement === undefined && 

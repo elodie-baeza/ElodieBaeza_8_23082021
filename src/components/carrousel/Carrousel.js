@@ -32,23 +32,21 @@ class Carrousel extends React.Component {
 
     render() {
         return (
-            <div className='slider-container'>
-                <div className='slider'>
-                    {this.props.pictures.map((src, index) => 
-                        this.state.slidePosition === ++index && 
-                        <img 
-                        key={index} 
-                        src={src} alt=""
-                        className={"active"}
-                        />
-                    )}
-                    <p>{this.state.slidePosition}/{this.props.pictures.length}</p>
-                </div>
+            <div className='slider'>
+                {this.props.pictures.map((src, index) => 
+                    this.state.slidePosition === ++index && 
+                    <img 
+                    key={index} 
+                    src={src} alt=""
+                    className={"active"}
+                    />
+                )}
                 {this.props.pictures.length !== 1
-                ? <div className='slider-buttons'>
+                ? <div className='buttons'>
                     <button type='button' onClick={this.prevSlide}>
                         <img src={arrowBack} alt=''/>
                     </button>
+                    <p>{`${this.state.slidePosition}/${this.props.pictures.length}`.toString()}</p>
                     <button type='button' onClick={this.nextSlide}>
                         <img src={arrowForward} alt=''/>
                     </button>

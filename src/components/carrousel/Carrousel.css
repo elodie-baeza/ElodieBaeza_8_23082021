@@ -1,72 +1,127 @@
-.slider-container {
-  position: relative;
-}
-
-.slider-container .slider img {
-  max-width: 100%;
-  display: none;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 2rem;
-}
-
-.slider-container .slider img.active {
-  width: 100%;
-  height: 26rem;
-  display: block;
-  -webkit-animation: fade 0.8s;
-          animation: fade 0.8s;
-}
-
-.slider-container p {
-  position: absolute;
-  bottom: 10%;
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 1.1rem;
-}
-
-.slider-container .slider-buttons {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  bottom: 0%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.slider-container .slider-buttons button {
-  background-color: transparent;
-  border-style: none;
-}
-
-.slider-container .slider-buttons button img {
-  height: 2%;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0;
+@media only screen and (max-width: 767.98px) {
+  .slider {
+    position: relative;
+    width: 100%;
   }
-  to {
-    opacity: 1;
+  .slider > img {
+    display: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 2rem;
+  }
+  .slider > img.active {
+    width: 100%;
+    height: 16rem;
+    display: block;
+    -webkit-animation: fade 0.8s;
+            animation: fade 0.8s;
+  }
+  .slider .buttons {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .slider .buttons button {
+    background-color: transparent;
+    border-style: none;
+  }
+  .slider .buttons button img {
+    height: 40px;
+  }
+  .slider .buttons p {
+    display: none;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
+@media only screen and (min-width: 768px) {
+  .slider {
+    position: relative;
+    width: 100%;
   }
-  to {
-    opacity: 1;
+  .slider > img {
+    display: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 2rem;
+  }
+  .slider > img.active {
+    width: 100%;
+    height: 26rem;
+    display: block;
+    -webkit-animation: fade 0.8s;
+            animation: fade 0.8s;
+  }
+  .slider .buttons {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    bottom: 0%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .slider .buttons button {
+    z-index: 2;
+    background-color: transparent;
+    border-style: none;
+  }
+  .slider .buttons button img {
+    height: 120px;
+  }
+  .slider .buttons p {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.1rem;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
-/*# sourceMappingURL=Carrousel.css.map */
+/*# sourceMappingURL=carrousel.css.map */

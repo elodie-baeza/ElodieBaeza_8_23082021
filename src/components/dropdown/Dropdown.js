@@ -18,20 +18,20 @@ class Dropdown extends React.Component {
 
     render() {
         return (
-            <div className={'dropdown-container ' + this.props.size}>
-                <div className='dropdown-title'>
+            <article className={'dropdown'}>
+                <header className='dropdown-title'>
                     <p>{this.props.title}</p>
                     <ArrowBack 
                     className={`dropdown-icon ${this.state.open ? 'show' : null}`}
                     onClick={this.toggleClass}
                     />
-                </div>
+                </header>
                 <ul className= {`dropdown-body ${this.state.open ? 'show' : null}`}>
                     {this.props.list.map((equipement, index) => 
                         <li key={index + 1}>{equipement}</li>
                     )}
                 </ul>
-            </div>
+            </article>
         )
     }
 

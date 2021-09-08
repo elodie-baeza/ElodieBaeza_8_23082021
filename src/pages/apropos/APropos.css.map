@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAItB;;AAPD,AAII,aAJS,GAIR,YAAY,CAAC;EACV,UAAU,EAAE,IAAI;CACnB",
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAItB;;AAPD,AAII,QAJI,GAIH,YAAY,CAAC;EACV,UAAU,EAAE,IAAI;CACnB",
     "sources": [
-        "APropos.scss"
+        "Apropos.scss"
     ],
     "names": [],
-    "file": "APropos.css"
+    "file": "Apropos.css"
 }

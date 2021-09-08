@@ -1,67 +1,137 @@
-.host-picture {
-  border-radius: 50%;
+@media only screen and (max-width: 767.98px) {
+  .infos {
+    color: #FF6060;
+  }
+  .infos .title {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  .infos .location {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  .infos .tags {
+    padding-bottom: 0.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .infos .tags .tag {
+    font-size: 10px;
+  }
+  .infos figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .infos figure figcaption {
+    padding-right: 0.66rem;
+    font-size: 12px;
+  }
+  .infos figure img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  .infos .host {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infos .host svg {
+    margin-left: 0.33rem;
+  }
+  .dropdown {
+    margin-top: 2rem;
+    width: 100%;
+  }
 }
 
-.presentation-container {
-  color: #FF6060;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 2rem;
-}
-
-.presentation-container > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.presentation-container .title-container .title {
-  font-size: 2.25rem;
-  width: 100%;
-  margin-top: 1rem;
-}
-
-.presentation-container .title-container .location {
-  margin-bottom: 1rem;
-}
-
-.presentation-container .host-container {
-  text-align: end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.presentation-container .host-container img {
-  width: 4rem;
-  height: 4rem;
-}
-
-.dropdowns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media only screen and (min-width: 768px) {
+  .infos {
+    color: #FF6060;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .infos .title {
+    margin-top: 2rem;
+    font-size: 2.25rem;
+    width: 100%;
+  }
+  .infos .location {
+    margin-bottom: 2rem;
+  }
+  .infos .tags {
+    padding-bottom: 0.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .infos .tags .tag {
+    font-size: 14px;
+  }
+  .infos figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 2rem;
+  }
+  .infos figure figcaption {
+    padding-right: 1rem;
+  }
+  .infos figure img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+  .infos svg {
+    margin-left: 0.66rem;
+  }
+  .dropdowns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dropdowns .dropdown {
+    margin-top: 2rem;
+    width: 45%;
+  }
 }
 /*# sourceMappingURL=Logement.css.map */

@@ -11,15 +11,14 @@ class APropos extends React.Component {
     return (
       <main>
         <Banner picture={bannerAPropos} />
-        <div className={'APropos-body'}>
+        <section className={'aPropos'}>
           {apropos.map( (item, index) => 
             <Dropdown 
             key={index} 
             title={item.title} 
-            list={new Array(item.text)}
-            size='large' />
+            list={new Array(item.text)}/>
           )}
-        </div>
+        </section>
       </main>
     )
   }

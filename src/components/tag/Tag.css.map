@@ -1,10 +1,10 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,MAAM;EACf,gBAAgB,ECJH,OAAO;EDKpB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,cAAc;EACvB,SAAS,EAAE,MAAM;EACjB,YAAY,EAAE,IAAI;CACrB",
+    "mappings": "AAEI,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,MAAM;EACf,gBAAgB,ECJP,OAAO;EDKhB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,cAAc;EACvB,SAAS,EAAE,OAAO;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACtB",
     "sources": [
-        "Tag.scss",
+        "tag.scss",
         "../../_variables.scss"
     ],
     "names": [],
-    "file": "Tag.css"
+    "file": "tag.css"
 }

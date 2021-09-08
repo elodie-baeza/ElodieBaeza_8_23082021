@@ -1,50 +1,105 @@
 @import '../../variables';
 
-.dropdown-container {
-    width: 45%;
-    margin-bottom: 2rem;
-    &.large {
-        width: 80%;
-    }
-    ul li {
-        list-style-type: none;
-    }
-    .dropdown-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 0.5rem;
-        color: white;
-        background-color: $colour-primary;
-        font-size: 18px;
-        z-index: 10;
-        padding: 0.8rem 1.2rem;
-        .dropdown-icon {
-            height: 2rem;
-            width: 2rem;
-            transform: rotate(-90deg);
-            transition: 0.5s;
-            path {
-                transform: translate(0, 11px);
-            }
-            &.show {
-                transform: rotate(90deg);
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+
+    .dropdown {
+        width: 100%;
+        margin-bottom: 1.25rem;
+        ul li {
+            list-style-type: none;
+        }
+        .dropdown-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.5rem;
+            color: white;
+            background-color: $colour-primary;
+            font-size: 13px;
+            z-index: 10;
+            padding: 0.35rem 0.85rem;
+            .dropdown-icon {
+                height: 2rem;
+                width: 2rem;
+                transform: rotate(-90deg);
                 transition: 0.5s;
+                path {
+                    transform: translate(0, 11px);
+                }
+                &.show {
+                    transform: rotate(90deg);
+                    transition: 0.5s;
+                }
+            }
+        }
+        .dropdown-body {
+            background-color: #F6F6F6;
+            font-size: 12px;
+            padding: 2rem 0.75rem 1.75rem 1.25rem;
+            margin-top: -0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            display: none;
+            color: $colour-primary;
+            &.show {
+                display: block;
+                z-index: -1;
+                position: relative;
             }
         }
     }
-    .dropdown-body {
-        background-color: #F6F6F6;
-        padding: 2.5rem 0.75rem 1.75rem 1.25rem;
-        margin-top: -0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
-        display: none;
-        color: $colour-primary;
-        &.show {
-            display: block;
-            z-index: -1;
-            position: relative;
+
+    
+}
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 768px){
+
+    .dropdown {
+        margin-bottom: 2rem;
+        width: 80%;
+        ul li {
+            list-style-type: none;
+        }
+        .dropdown-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0.5rem;
+            color: white;
+            background-color: $colour-primary;
+            font-size: 18px;
+            z-index: 10;
+            padding: 0.8rem 1.2rem;
+            .dropdown-icon {
+                height: 2rem;
+                width: 2rem;
+                transform: rotate(-90deg);
+                transition: 0.5s;
+                path {
+                    transform: translate(0, 11px);
+                }
+                &.show {
+                    transform: rotate(90deg);
+                    transition: 0.5s;
+                }
+            }
+        }
+        .dropdown-body {
+            background-color: #F6F6F6;
+            padding: 2.5rem 0.75rem 1.75rem 1.25rem;
+            margin-top: -0.5rem;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            display: none;
+            color: $colour-primary;
+            &.show {
+                display: block;
+                z-index: -1;
+                position: relative;
+            }
         }
     }
+
 }

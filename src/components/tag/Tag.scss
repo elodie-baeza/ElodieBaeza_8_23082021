@@ -1,11 +1,13 @@
 @import '../../variables';
 
-.tag {
-    display: inline;
-    background-color: $colour-primary;
-    color: white;
-    border-radius: 0.6rem;
-    padding: 0.25rem 1.5rem;
-    font-size: 0.9rem;
-    margin-right: 1rem;
-}
+    .tag {
+        display: inline;
+        background-color: $colour-primary;
+        color: white;
+        border-radius: 0.6rem;
+        padding: 0.25rem 1.5rem;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
