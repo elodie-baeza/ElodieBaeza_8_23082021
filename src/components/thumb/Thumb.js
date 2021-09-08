@@ -7,10 +7,11 @@ class Thumb extends React.Component {
     render() {
         return(
             <Link to={`/fiche/${this.props.index}`} className='thumb'>
-                <figure>
-                    <img src={this.props.cover} alt='' />
-                    <figcaption>{this.props.title}</figcaption>
-                </figure>
+                {this.props.cover !== ''
+                ? <img src={this.props.cover} alt='cover' />
+                : null
+                }
+                <p>{this.props.title}</p>
             </Link>
         )
     }

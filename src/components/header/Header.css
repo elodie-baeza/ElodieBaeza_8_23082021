@@ -1,12 +1,5 @@
-.header-nav {
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1.5rem;
-}
-
 @media only screen and (max-width: 767.98px) {
-  .header-desktop {
+  header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -18,38 +11,47 @@
             align-items: center;
     margin: 1.25rem 1.25rem;
   }
-  .header-desktop a {
+  header nav a {
     font-size: 0.9rem;
     padding-left: 0.6rem;
     color: #FF6060;
   }
-  .logo {
+  header nav .logo {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  header nav .logo img {
     height: 3rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .header-desktop {
+  header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 2.5rem 1.25rem;
+    margin: 2.5rem 6rem;
   }
-  .header-desktop a {
+  header nav a {
     font-size: 1.75rem;
     padding-left: 3.5rem;
     color: #FF6060;
   }
-  .logo {
+  header nav .logo {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    padding: 0;
+  }
+  header nav .logo img {
     height: 4.3rem;
   }
 }
-/*# sourceMappingURL=Header.css.map */
+/*# sourceMappingURL=header.css.map */

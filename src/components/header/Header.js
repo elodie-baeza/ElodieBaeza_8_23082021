@@ -8,9 +8,11 @@ import { Link } from 'react-router-dom';
 class Header extends React.Component{
     render(){
         return (
-            <header className='header-desktop'>
-                <img src={logo} alt="Kasa" className='logo'/>
-                <nav className='header-nav'>
+            <header>
+                <nav>
+                    <Link to='/' className='logo'>
+                        <img src={logo} alt="Kasa" />
+                    </Link>
                     <Link to='/'>Accueil</Link>
                     <Link to='/apropos'>A Propos</Link>
                 </nav>

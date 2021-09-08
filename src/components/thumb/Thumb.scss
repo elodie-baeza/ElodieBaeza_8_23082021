@@ -4,30 +4,39 @@
 @media only screen and (max-width: 767.98px){
 
     .thumb {
-        display: flex;
-        width: 21rem;
-        margin-top: 3rem;
-        figure {
             position: relative;
-        }
-        img {
-            object-fit: cover;
-            background-color: $colour-primary;
-            border-radius: 0.6rem;
+            z-index: 3;
             width: 21rem;
             height: 16rem;
-        }
-        figcaption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 13rem;
-            color: rgba(255,255,255,1);
-            background: rgba(0,0,0,0.4);
-            font-size: 18px;
-            padding: 20px;
             border-radius: 0.6rem;
-        }
+            margin-top: 3rem;
+            background: 
+                linear-gradient(
+                    $colour-primary,
+                    75%,
+                    rgba(140, 57, 57, 1)
+                );
+            img {
+                object-fit: cover;
+                border-radius: 0.6rem;
+                width: 21rem;
+                height: 16rem;
+            }
+            p {
+                background-image: 
+                    linear-gradient(
+                        rgba(255, 255, 255, 0),
+                        50%,
+                        rgba(115, 115, 115, 0.7)
+                    );
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                color: rgba(255,255,255,1);
+                font-size: 18px;
+                padding: 20px;
+                border-radius: 0.6rem;
+            }
     }
 
 }
@@ -36,32 +45,62 @@
 // **************** DESKTOP ******************************
 @media only screen and (min-width: 768px){
 
+    // .thumb {
+    //     display: flex;
+    //     width: 21rem;
+    //     height: 21rem;
+    //     margin-top: 3rem;
+    //     img {
+    //         object-fit: cover;
+    //         background-color: $colour-primary;
+    //         border-radius: 0.6rem;
+    //         width: 21rem;
+    //         height: 21rem;
+    //     }
+    //     p {
+    //         position: absolute;
+    //         bottom: 0;
+    //         left: 0;
+    //         color: rgba(255,255,255,1);
+    //         font-size: 18px;
+    //         padding: 20px;
+    //         border-radius: 0.6rem;
+    //     }
+    // }
     .thumb {
-        display: flex;
+        position: relative;
+        z-index: 3;
         width: 21rem;
         height: 21rem;
+        border-radius: 0.6rem;
         margin-top: 3rem;
-        figure {
-            position: relative;
-        }
+        background: 
+            linear-gradient(
+                $colour-primary,
+                75%,
+                rgba(140, 57, 57, 1)
+            );
         img {
             object-fit: cover;
-            background-color: $colour-primary;
-            filter: brightness(80%);
             border-radius: 0.6rem;
             width: 21rem;
             height: 21rem;
         }
-        figcaption {
+        p {
+            background-image: 
+                linear-gradient(
+                    rgba(255, 255, 255, 0),
+                    50%,
+                    rgba(115, 115, 115, 0.7)
+                );
+            width: 100%;
             position: absolute;
             bottom: 0;
-            left: 0;
             color: rgba(255,255,255,1);
-            // background: rgba(0,0,0,0.4);
             font-size: 18px;
             padding: 20px;
             border-radius: 0.6rem;
         }
-    }
+}
 
 }

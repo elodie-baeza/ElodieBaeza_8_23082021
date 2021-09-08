@@ -12,7 +12,7 @@ class Accueil extends React.Component {
       return (
         <main>
           <Banner picture={bannerHome} slogan='Chez vous, partout et ailleurs'/>
-          <section className='list'>
+          <section className='thumbsList'>
             {getAPI.map( item =>
               <Thumb 
                 key={item.id} 

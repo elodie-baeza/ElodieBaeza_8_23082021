@@ -1,29 +1,28 @@
 @media only screen and (max-width: 767.98px) {
   .thumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 21rem;
-    margin-top: 3rem;
-  }
-  .thumb figure {
     position: relative;
+    z-index: 3;
+    width: 21rem;
+    height: 16rem;
+    border-radius: 0.6rem;
+    margin-top: 3rem;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF6060), color-stop(75%), to(#8c3939));
+    background: linear-gradient(#FF6060, 75%, #8c3939);
   }
   .thumb img {
     -o-object-fit: cover;
        object-fit: cover;
-    background-color: #FF6060;
     border-radius: 0.6rem;
     width: 21rem;
     height: 16rem;
   }
-  .thumb figcaption {
+  .thumb p {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%), to(rgba(115, 115, 115, 0.7)));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), 50%, rgba(115, 115, 115, 0.7));
+    width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 13rem;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
     font-size: 18px;
     padding: 20px;
     border-radius: 0.6rem;
@@ -32,34 +31,32 @@
 
 @media only screen and (min-width: 768px) {
   .thumb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative;
+    z-index: 3;
     width: 21rem;
     height: 21rem;
+    border-radius: 0.6rem;
     margin-top: 3rem;
-  }
-  .thumb figure {
-    position: relative;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF6060), color-stop(75%), to(#8c3939));
+    background: linear-gradient(#FF6060, 75%, #8c3939);
   }
   .thumb img {
     -o-object-fit: cover;
        object-fit: cover;
-    background-color: #FF6060;
-    -webkit-filter: brightness(80%);
-            filter: brightness(80%);
     border-radius: 0.6rem;
     width: 21rem;
     height: 21rem;
   }
-  .thumb figcaption {
+  .thumb p {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(50%), to(rgba(115, 115, 115, 0.7)));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), 50%, rgba(115, 115, 115, 0.7));
+    width: 100%;
     position: absolute;
     bottom: 0;
-    left: 0;
     color: white;
     font-size: 18px;
     padding: 20px;
     border-radius: 0.6rem;
   }
 }
-/*# sourceMappingURL=Thumb.css.map */
+/*# sourceMappingURL=thumb.css.map */
