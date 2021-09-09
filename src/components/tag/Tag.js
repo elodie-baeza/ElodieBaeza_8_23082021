@@ -1,4 +1,4 @@
-import 'components/tag/Tag.css'
+import 'styles/components/tag/Tag.css'
 import React from 'react';
 
 class Tag extends React.Component {

@@ -1,4 +1,4 @@
-import 'components/carrousel/Carrousel.css'
+import 'styles/components/carrousel/Carrousel.css'
 import React from 'react'
 import arrowBack from 'assets/arrow_back.svg'
 import arrowForward from 'assets/arrow_forward.svg'

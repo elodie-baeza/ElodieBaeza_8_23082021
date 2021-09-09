@@ -1,4 +1,4 @@
-import 'pages/accueil/Accueil.css'
+import 'styles/pages/accueil/Accueil.css'
 import React from 'react';
 import bannerHome from 'assets/banner-home.jpg';
 import Thumb from 'components/thumb/Thumb';

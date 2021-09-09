@@ -1,4 +1,4 @@
-import 'components/dropdown/Dropdown.css'
+import 'styles/components/dropdown/Dropdown.css'
 import React from 'react'
 import { ReactComponent as ArrowBack } from 'assets/arrow_back.svg'
 

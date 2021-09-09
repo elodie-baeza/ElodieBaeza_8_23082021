@@ -1,4 +1,4 @@
-import 'pages/apropos/APropos.css';
+import 'styles/pages/apropos/APropos.css'
 import React from 'react';
 import bannerAPropos from 'assets/banner-a-propos.jpg';
 import Dropdown from 'components/dropdown/Dropdown';

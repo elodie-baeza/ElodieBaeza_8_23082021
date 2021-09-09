@@ -3,17 +3,19 @@
     position: relative;
     width: 100%;
   }
+
   .slider > img {
     display: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 2rem;
     width: 100%;
     height: 16rem;
     display: block;
     -webkit-animation: fade 0.8s;
-            animation: fade 0.8s;
+    animation: fade 0.8s;
   }
+
   .slider .buttons {
     position: absolute;
     display: -webkit-box;
@@ -23,22 +25,26 @@
     height: 100%;
     bottom: 0%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   .slider .buttons button {
     background-color: transparent;
     border-style: none;
   }
+
   .slider .buttons button img {
     height: 40px;
   }
+
   .slider .buttons p {
     display: none;
   }
+
   @-webkit-keyframes fade {
     from {
       opacity: 0;
@@ -56,23 +62,24 @@
     }
   }
 }
-
 @media only screen and (min-width: 768px) {
   .slider {
     position: relative;
     width: 100%;
   }
+
   .slider > img {
     display: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     border-radius: 2rem;
     width: 100%;
     height: 26rem;
     display: block;
     -webkit-animation: fade 0.8s;
-            animation: fade 0.8s;
+    animation: fade 0.8s;
   }
+
   .slider .buttons {
     position: absolute;
     display: -webkit-box;
@@ -82,27 +89,31 @@
     height: 100%;
     bottom: 0%;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   .slider .buttons button {
     z-index: 2;
     background-color: transparent;
     border-style: none;
   }
+
   .slider .buttons button img {
     height: 120px;
   }
+
   .slider .buttons p {
     -ms-flex-item-align: end;
-        align-self: flex-end;
+    align-self: flex-end;
     margin-bottom: 1.5rem;
     color: white;
     font-size: 1.1rem;
   }
+
   @-webkit-keyframes fade {
     from {
       opacity: 0;
@@ -120,4 +131,6 @@
     }
   }
 }
+/*# sourceMappingURL=Carrousel.css.map */
+
 /*# sourceMappingURL=Carrousel.css.map */

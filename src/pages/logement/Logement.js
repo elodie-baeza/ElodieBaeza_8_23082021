@@ -1,4 +1,4 @@
-import 'pages/logement/Logement.css';
+import 'styles/pages/logement/Logement.css'
 import React from 'react';
 import Tag from 'components/tag/Tag';
 import Carrousel from 'components/carrousel/Carrousel';
