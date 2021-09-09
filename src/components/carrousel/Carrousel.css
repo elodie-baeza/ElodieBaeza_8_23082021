@@ -8,8 +8,6 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 2rem;
-  }
-  .slider > img.active {
     width: 100%;
     height: 16rem;
     display: block;
@@ -69,8 +67,6 @@
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 2rem;
-  }
-  .slider > img.active {
     width: 100%;
     height: 26rem;
     display: block;
