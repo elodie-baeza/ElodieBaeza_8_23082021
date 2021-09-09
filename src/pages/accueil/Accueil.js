@@ -2,10 +2,8 @@ import 'pages/accueil/Accueil.css'
 import React from 'react';
 import bannerHome from 'assets/banner-home.jpg';
 import Thumb from 'components/thumb/Thumb';
-import logements from 'data/logements.json'
 import Banner from 'components/banner/Banner';
-
-const getAPI = logements
+import logements from 'data/logements.json'
 
 class Accueil extends React.Component {
   render () {
@@ -13,7 +11,7 @@ class Accueil extends React.Component {
         <main>
           <Banner picture={bannerHome} slogan='Chez vous, partout et ailleurs'/>
           <section className='thumbsList'>
-            {getAPI.map( item =>
+            {logements.map( item =>
               <Thumb 
                 key={item.id} 
                 id={item.id} 
