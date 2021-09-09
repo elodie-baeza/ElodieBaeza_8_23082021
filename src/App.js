@@ -4,14 +4,16 @@ import Header from 'components/header/Header';
 import Router from 'Router';
 import Footer from 'components/footer/Footer';
 
-function App() {
-  return (
-    <BrowserRouter>
-        <Header />
-        <Router />
-        <Footer />
-    </BrowserRouter>
-  )
+class App extends React.Component {
+  render () {
+    return (
+      <BrowserRouter>
+          <Header />
+          <Router />
+          <Footer />
+      </BrowserRouter>
+    )
+  }
 }
 
 export default App;
