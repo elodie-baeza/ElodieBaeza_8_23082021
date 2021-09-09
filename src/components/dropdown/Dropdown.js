@@ -9,11 +9,10 @@ class Dropdown extends React.Component {
         this.state = {
             open: false,
         }
-        this.toggleClass = this.toggleClass.bind(this)
     }
 
     toggleClass() {
-        this.setState({open: !this.state.open})
+        this.setState({'open': !this.state.open})
     }
 
     render() {
@@ -23,7 +22,8 @@ class Dropdown extends React.Component {
                     <p>{this.props.title}</p>
                     <ArrowBack 
                     className={`dropdown-icon ${this.state.open ? 'show' : null}`}
-                    onClick={this.toggleClass}
+                    // Cette syntaxe nous assure que `this` est bien lié dans la méthode handleClick
+                    onClick={() => this.toggleClass()}
                     />
                 </header>
                 <ul className= {`dropdown-body ${this.state.open ? 'show' : null}`}>

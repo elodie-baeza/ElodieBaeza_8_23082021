@@ -46,9 +46,11 @@
                 }
             }
         }
-        .dropdown {
-            margin-top: 2rem;
-            width: 100%;
+        .dropdowns {
+            margin-top: 1rem;
+            .dropdown {
+                width: 100%;
+            }
         }
 
 }

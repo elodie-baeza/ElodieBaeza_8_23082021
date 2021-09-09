@@ -16,7 +16,7 @@ class APropos extends React.Component {
             <Dropdown 
             key={index} 
             title={item.title} 
-            list={new Array(item.text)}/>
+            list={[item.text]}/>
           )}
         </section>
       </main>

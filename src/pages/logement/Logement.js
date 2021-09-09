@@ -4,7 +4,7 @@ import Tag from 'components/tag/Tag';
 import Carrousel from 'components/carrousel/Carrousel';
 import Dropdown from 'components/dropdown/Dropdown';
 import Rate from 'components/rate/Rate';
-import logementsDatas from 'data/logements.json'
+import logementsData from 'data/logements.json'
 import { Redirect } from 'react-router';
 
 class Logement extends React.Component {
@@ -17,19 +17,11 @@ class Logement extends React.Component {
   }
 
   componentDidMount() {
-    let slug = this.props.match.params.id
     this.setState({ 
-      logement: logementsDatas.find(x => x.id === slug)
+      'logement': logementsData.find(logement => logement.id === this.props.match.params.id)
     })
   }
   
-  descriptionInArray() {
-    if (this.state.logement != null) {
-      var descriptionInArray = new Array([this.state.logement.description])
-    }
-    return descriptionInArray
-  }
-
   render() {
     return (
       this.state.logement ? (
@@ -58,7 +50,7 @@ class Logement extends React.Component {
             </section>
             <section className='dropdowns'>
               <Dropdown title='Equipements' list={this.state.logement.equipments}/>
-              <Dropdown title='Description' list={this.descriptionInArray()}/>
+              <Dropdown title='Description' list={[this.state.logement.description]}/>
             </section>
           </main>
       )

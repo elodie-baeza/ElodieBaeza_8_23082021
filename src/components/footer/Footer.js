@@ -8,7 +8,7 @@ class Footer extends React.Component{
         return (
             <footer className='footer'>
                 <Logo className='footer-logo'/>
-                <p>© 2020 Kasa. All rights reserved</p>
+                <p>© {new Date().getFullYear()} Kasa. All rights reserved</p>
             </footer>
         );
     }

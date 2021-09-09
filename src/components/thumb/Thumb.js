@@ -6,7 +6,7 @@ class Thumb extends React.Component {
 
     render() {
         return(
-            <Link to={`/fiche/${this.props.index}`} className='thumb'>
+            <Link to={`/fiche/${this.props.id}`} className='thumb'>
                 {this.props.cover !== ''
                 ? <img src={this.props.cover} alt='cover' />
                 : null

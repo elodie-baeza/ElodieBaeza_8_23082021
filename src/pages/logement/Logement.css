@@ -61,8 +61,10 @@
   .infos .host svg {
     margin-left: 0.33rem;
   }
-  .dropdown {
-    margin-top: 2rem;
+  .dropdowns {
+    margin-top: 1rem;
+  }
+  .dropdowns .dropdown {
     width: 100%;
   }
 }
