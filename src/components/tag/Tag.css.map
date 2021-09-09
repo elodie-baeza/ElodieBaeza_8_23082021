@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "AAEI,AAAA,IAAI,CAAC;EACD,OAAO,EAAE,MAAM;EACf,gBAAgB,ECJP,OAAO;EDKhB,KAAK,EAAE,KAAK;EACZ,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,cAAc;EACvB,SAAS,EAAE,OAAO;EAClB,YAAY,EAAE,IAAI;EAClB,aAAa,EAAE,IAAI;CACtB",
     "sources": [
-        "tag.scss",
+        "Tag.scss",
         "../../_variables.scss"
     ],
     "names": [],
-    "file": "tag.css"
+    "file": "Tag.css"
 }

@@ -1,7 +1,7 @@
 // **************** MOBILE ******************************
 @media only screen and (max-width: 767.98px){
     
-    .erreur404 {
+    .erreur {
         display: flex;
         height: 86vh;
         flex-direction: column;
@@ -30,7 +30,7 @@
 // **************** DESKTOP ******************************
 @media only screen and (min-width: 768px){
     
-    .erreur404 {
+    .erreur {
         display: flex;
         flex-direction: column;
         justify-content: space-between;

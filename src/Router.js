@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Accueil from 'pages/accueil/Accueil';
 import APropos from 'pages/apropos/APropos';
 import Logement from 'pages/logement/Logement';
-import Erreur404 from 'pages/erreur404/Erreur404';
+import Erreur from 'components/erreur/Erreur';
 
 class Router extends React.Component {
 
@@ -26,7 +26,7 @@ class Router extends React.Component {
                 </Route>
       
                 <Route path='/'>
-                  <Erreur404 />
+                  <Erreur number='404' message={`Oups! La page que vous demandez n'existe pas.`}/>
                 </Route>
             </Switch>
         )

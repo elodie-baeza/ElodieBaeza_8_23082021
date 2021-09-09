@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;CAItB;;AAPD,AAII,QAJI,GAIH,YAAY,CAAC;EACV,UAAU,EAAE,IAAI;CACnB",
     "sources": [
-        "Apropos.scss"
+        "APropos.scss"
     ],
     "names": [],
-    "file": "Apropos.css"
+    "file": "APropos.css"
 }

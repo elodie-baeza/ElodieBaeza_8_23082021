@@ -1,5 +1,5 @@
 @media only screen and (max-width: 767.98px) {
-  .erreur404 {
+  .erreur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16,23 +16,23 @@
             align-items: center;
     color: #FF6060;
   }
-  .erreur404 h2 {
+  .erreur h2 {
     margin: 0;
     font-weight: 700;
     font-size: 21vw;
   }
-  .erreur404 p {
+  .erreur p {
     font-size: 5vw;
     margin: 1rem 2rem 8rem 2rem;
     text-align: center;
   }
-  .erreur404 Link {
+  .erreur Link {
     font-size: 0.85rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .erreur404 {
+  .erreur {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -49,19 +49,19 @@
     color: #FF6060;
     height: 48rem;
   }
-  .erreur404 h2 {
+  .erreur h2 {
     margin: 0;
     font-weight: 700;
     font-size: 21vw;
     text-align: center;
   }
-  .erreur404 p {
+  .erreur p {
     font-size: 2vw;
     text-align: center;
   }
-  .erreur404 a {
+  .erreur a {
     font-size: 1.15rem;
     margin-bottom: 10rem;
   }
 }
-/*# sourceMappingURL=Erreur404.css.map */
+/*# sourceMappingURL=Erreur.css.map */
