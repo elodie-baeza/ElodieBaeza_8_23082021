@@ -21,12 +21,12 @@ class Dropdown extends React.Component {
                 <header className='dropdown-title'>
                     <p>{this.props.title}</p>
                     <ArrowBack 
-                    className={`dropdown-icon ${this.state.open ? 'show' : null}`}
+                    className={`dropdown-icon ${this.state.open && 'show'}`}
                     // Cette syntaxe nous assure que `this` est bien lié dans la méthode handleClick
                     onClick={() => this.toggleClass()}
                     />
                 </header>
-                <ul className= {`dropdown-body ${this.state.open ? 'show' : null}`}>
+                <ul className= {`dropdown-body ${this.state.open && 'show'}`}>
                     {this.props.list.map((equipement, index) => 
                         <li key={index + 1}>{equipement}</li>
                     )}

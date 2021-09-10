@@ -16,9 +16,8 @@ class Header extends React.Component{
                     <Link to='/'>Accueil</Link>
                     <Link to='/apropos'>A Propos</Link>
                 </nav>
-                {this.props.banner
-                ? <Banner picture={this.props.picture} slogan={this.props.slogan}/>
-                : null }
+                {this.props.banner &&
+                <Banner picture={this.props.picture} slogan={this.props.slogan}/>}
             </header>
         );
     }
