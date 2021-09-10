@@ -10,6 +10,8 @@ class Carrousel extends React.Component {
         this.state = {
             slidePosition: 1
         }
+        // Cette liaison est nécéssaire afin de permettre
+        // l'utilisation de `this` dans la fonction de rappel.
         this.prevSlide = this.prevSlide.bind(this)
         this.nextSlide = this.nextSlide.bind(this)
     }
