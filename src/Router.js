@@ -25,7 +25,7 @@ class Router extends React.Component {
                   }>
                 </Route>
       
-                <Route path='/'>
+                <Route>
                   <Erreur number='404' message={`Oups! La page que vous demandez n'existe pas.`}/>
                 </Route>
             </Switch>
