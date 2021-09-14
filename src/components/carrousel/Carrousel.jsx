@@ -37,9 +37,9 @@ class Carrousel extends React.Component {
             <div className='slider'>
                 {this.props.pictures.map((path, index) => 
                     this.state.slidePosition === ++index && 
-                    <img key={index} src={path} alt=""/>
+                    <img src={path} alt=""/>
                 )}
-                this.props.pictures.length !== 1 &&
+                {this.props.pictures.length !== 1 &&
                  <div className='buttons'>
                     <button type='button' onClick={this.prevSlide}>
                         <img src={arrowBack} alt=''/>
@@ -48,7 +48,7 @@ class Carrousel extends React.Component {
                     <button type='button' onClick={this.nextSlide}>
                         <img src={arrowForward} alt=''/>
                     </button>
-                </div>
+                </div>}
             </div>
         )
     }
