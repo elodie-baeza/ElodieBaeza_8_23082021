@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ElodieBaeza_8_23082021/static/css/main.889475c7.chunk.css",
+    "main.js": "/ElodieBaeza_8_23082021/static/js/main.d935e4ee.chunk.js",
+    "main.js.map": "/ElodieBaeza_8_23082021/static/js/main.d935e4ee.chunk.js.map",
+    "runtime-main.js": "/ElodieBaeza_8_23082021/static/js/runtime-main.607b7b3c.js",
+    "runtime-main.js.map": "/ElodieBaeza_8_23082021/static/js/runtime-main.607b7b3c.js.map",
+    "static/js/2.c1c93d8e.chunk.js": "/ElodieBaeza_8_23082021/static/js/2.c1c93d8e.chunk.js",
+    "static/js/2.c1c93d8e.chunk.js.map": "/ElodieBaeza_8_23082021/static/js/2.c1c93d8e.chunk.js.map",
+    "index.html": "/ElodieBaeza_8_23082021/index.html",
+    "static/css/main.889475c7.chunk.css.map": "/ElodieBaeza_8_23082021/static/css/main.889475c7.chunk.css.map",
+    "static/js/2.c1c93d8e.chunk.js.LICENSE.txt": "/ElodieBaeza_8_23082021/static/js/2.c1c93d8e.chunk.js.LICENSE.txt",
+    "static/media/arrow_back.cdd03842.svg": "/ElodieBaeza_8_23082021/static/media/arrow_back.cdd03842.svg",
+    "static/media/arrow_forward.56557f94.svg": "/ElodieBaeza_8_23082021/static/media/arrow_forward.56557f94.svg",
+    "static/media/banner-a-propos.3827f97b.jpg": "/ElodieBaeza_8_23082021/static/media/banner-a-propos.3827f97b.jpg",
+    "static/media/banner-home.053687a5.jpg": "/ElodieBaeza_8_23082021/static/media/banner-home.053687a5.jpg",
+    "static/media/logo.ac38b36e.svg": "/ElodieBaeza_8_23082021/static/media/logo.ac38b36e.svg",
+    "static/media/star.325cf1d5.svg": "/ElodieBaeza_8_23082021/static/media/star.325cf1d5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.607b7b3c.js",
+    "static/js/2.c1c93d8e.chunk.js",
+    "static/css/main.889475c7.chunk.css",
+    "static/js/main.d935e4ee.chunk.js"
+  ]
+}
