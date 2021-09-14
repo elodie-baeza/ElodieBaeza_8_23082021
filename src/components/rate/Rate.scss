@@ -1,0 +1,29 @@
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+    .rate {
+        display: flex;
+        justify-content: space-between;
+        svg[class*='icon'] {
+            height: 1rem;
+            width: 1rem;
+        }
+        .icon-empty {
+            path {
+                fill: #e3e3e3;
+            }
+        }
+    }
+}
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 767.98px){
+    .rate {
+        display: flex;
+        justify-content: space-between;
+        .icon-empty {
+            path {
+                fill: #e3e3e3;
+            }
+        }
+    }
+}

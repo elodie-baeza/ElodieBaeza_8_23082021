@@ -1,0 +1,56 @@
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+    
+    .erreur {
+        display: flex;
+        height: 86vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FF6060;
+        h2 {
+            // margin-top: 10rem;
+            margin: 0;
+            font-weight: 700;
+            font-size: 21vw;
+        }    
+        p {
+            font-size: 5vw;
+            margin: 1rem 2rem 8rem 2rem;
+            text-align: center;
+        }
+
+        Link {
+            font-size: 0.85rem;
+        }
+    }
+    
+}
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 768px){
+    
+    .erreur {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        color: #FF6060;
+        height: 48rem;
+        h2 {
+            margin: 0;
+            font-weight: 700;
+            font-size: 21vw;
+            text-align: center;
+        }    
+        p {
+            font-size: 2vw;
+            text-align: center;
+        }
+        a {
+            font-size: 1.15rem;
+            margin-bottom: 10rem;
+        }
+    }
+    
+}

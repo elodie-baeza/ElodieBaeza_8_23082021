@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767.98px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 3vw;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .footer-logo path {
+    fill: white;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  .footer.apropos {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-logo {
+    height: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  .footer-logo path {
+    fill: white;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */
+
+/*# sourceMappingURL=Footer.css.map */

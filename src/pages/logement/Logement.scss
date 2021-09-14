@@ -1,0 +1,107 @@
+@import '../../variables';
+
+// **************** MOBILE ******************************
+@media only screen and (max-width: 767.98px){
+
+        .infos {
+            color: $colour-primary;
+            .title {
+                margin-top: 1rem;
+                font-size: 1.25rem;
+                width: 100%;
+            }
+            .location {
+                margin-bottom: 1rem;
+                font-size: 0.9rem;
+            }
+            .tags {
+                padding-bottom: 0.25rem;
+                display: flex;
+                flex-wrap: wrap;
+                .tag {
+                    font-size: 10px;
+                }
+            }
+            figure {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                figcaption {
+                    padding-right: 0.66rem;
+                    font-size: 12px;
+                }
+                img {
+                    width: 2rem;
+                    height: 2rem;
+                    border-radius: 50%;
+                }
+            }
+            .host {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                align-items: center;
+                svg {
+                    margin-left: 0.33rem
+                }
+            }
+        }
+        .dropdowns {
+            margin-top: 1rem;
+            .dropdown {
+                width: 100%;
+            }
+        }
+
+}
+
+// **************** DESKTOP ******************************
+@media only screen and (min-width: 768px){
+
+        .infos {
+            color: $colour-primary;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .title {
+                margin-top: 2rem;
+                font-size: 2.25rem;
+                width: 100%;
+            }
+            .location {
+                margin-bottom: 2rem;
+            }
+            .tags {
+                padding-bottom: 0.25rem;
+                display: flex;
+                .tag {
+                    font-size: 14px;
+                }
+            }
+            figure {
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                padding-bottom: 2rem;
+                figcaption {
+                    padding-right: 1rem;
+                }
+                img {
+                    width: 4rem;
+                    height: 4rem;
+                    border-radius: 50%;
+                }
+            }
+            svg {
+                margin-left: 0.66rem
+            }
+        }
+        .dropdowns {
+            display: flex;
+            justify-content: space-between;
+            .dropdown {
+                margin-top: 2rem;
+                width: 45%;
+            }
+        }
+}

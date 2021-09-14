@@ -1,0 +1,36 @@
+@media only screen and (max-width: 767.98px) {
+  .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .rate svg[class*=icon] {
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .rate .icon-empty path {
+    fill: #e3e3e3;
+  }
+}
+@media only screen and (min-width: 767.98px) {
+  .rate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .rate .icon-empty path {
+    fill: #e3e3e3;
+  }
+}
+/*# sourceMappingURL=Rate.css.map */
+
+/*# sourceMappingURL=Rate.css.map */
