@@ -13,11 +13,10 @@ class Accueil extends React.Component {
           <section className='thumbsList'>
             {logements.map( item =>
               <Thumb 
-                key={item.id} 
+                key={item.id}
                 id={item.id} 
                 cover={item.cover} 
                 title={item.title} 
-                index={item.id}
               />
             )}
           </section>
